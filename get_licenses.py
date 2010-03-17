@@ -43,16 +43,6 @@ class ABCScraper(object):
         # is abstracted to handle either type.
         if task == 'retail':
             self.task = 'licenseedata'
-            """
-            self.fields = ['Trade Name', 'License', 'Origination Date',
-                           'Establishment Type', 'Privilege Description',
-                           'Effective Date', 'Renewal Date', 'Expiration Date',
-                           'Address', 'Mixed Beverage Privilege Description',
-                           'Privilege Status', 'Establishment Sub-Type',
-                           'Company Name', 'Mixed Privilege Status'
-                           'Mixed Effective Date', 'Mixed Expiration Date',
-                           'Mixed Renewal Date']
-            """
             self.fields = ['Trade Name', 'Mixed Renewal Date', 'License',
                            'Origination Date', 'Establishment Type',
                            'Privilege Description',
